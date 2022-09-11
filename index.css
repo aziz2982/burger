@@ -1,0 +1,403 @@
+@font-face { font-family: Balonku; src: url('Balonku.otf'); }
+
+body {
+  background-color: #FFEFD5;
+  height: 100%;
+}
+
+/* .whole-page {
+  width: 100%
+} */
+/* .container {
+  max-width: 80%
+} */
+
+#header-name {
+  font-family: Balonku;
+  color: grey;
+  text-shadow: 3px grey;
+  font-size: 90px;
+  text-align: center;
+  padding: 30px;
+}
+
+ul .burgers-list {
+  padding-inline-start: 0;
+}
+
+.burger-card {
+  border-radius: 5px;
+  border: 2px solid grey;
+  height: 270px;
+  padding: 5px;
+  margin: 10px;
+  align-items: center;
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+  width: 40%;
+  background-color: #ffce64;
+}
+
+.burger-card:hover{
+  background-color: #e8a533;
+}
+
+.burger-card h5 {
+  text-align: center;
+}
+
+.delete-button {
+  color: #2db04f;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: red;
+}
+
+.edit-button {
+  color: #2db04f;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  color: red;
+}
+
+.burger-maker-container {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.burgers-list-container {
+  margin-top: 30px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.burgers-list-container h2 {
+  font-family: Balonku;
+  color: grey;
+  text-shadow: 3px grey;
+  font-size: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.burger-image-container{
+  border: 2px solid grey;
+  height: 150px;
+}
+
+.burger-display {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  height: 55vh;
+  width: 100%;
+  overflow: auto;
+  position: relative;
+  border: 2px solid grey;
+  background-color: white;
+}
+
+.burger-display img {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 50px;
+  cursor: pointer;
+}
+
+#welcome-display img {
+  cursor: pointer;
+}
+
+.burger-image-container {
+  position: relative;
+  background: white;
+}
+
+.ingredient-image {
+  position: absolute;
+  display: block;
+  width: 70%;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+/* ingredients buttons */
+.ingr-buttons {
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  margin: 30px 5px;
+  background-color: #CD5C5C;
+  border-color: #CD5C5C;
+  color: #fff;
+}
+
+.ingr-buttons:hover {
+  background-color: #B22222;
+  border-color: #B22222;
+}
+
+.ingredients-list-container h2 {
+  font-family: Balonku;
+  color: grey;
+  text-shadow: 3px grey;
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#ingredients-list div{
+  display: inline;
+}
+
+.two-buttons-container{
+  text-align: center;
+  margin-left: 2vh;
+}
+
+.two-buttons{
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  margin: 30px 5px;
+  border-color: #3CB371;
+  background-color: #3CB371;
+  color: #fff;
+}
+
+.two-buttons:hover {
+  background-color: #2E8B57;
+  border-color: #2E8B57;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+#burger-form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#submit-button {
+  float: right;
+}
+
+.burger-info-1 {
+  background-color: #edd0a0;
+  width: 100%;
+  height: 55px;
+  /* border-radius: 25px; */
+  border-radius: 30px 30px 5px 5px;
+}
+
+.burger-info-2 {
+  background-color: #edd0a0;
+  width: 100%;
+  height: 55px;
+  border-radius: 5px 5px 30px 30px;
+}
+
+.complete-burger-display h2 {
+  font-family: Balonku;
+  color: grey;
+  text-shadow: 3px grey;
+  font-size: 25px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.burger-info-1 button {
+  position: relative;
+  float: right;
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: Balonku;
+  color: grey;
+  text-shadow: 3px grey;
+}
+
+
+
+/* Ingredient placement when being rendered to BIG DIV */
+img.ingr-placement-0 {
+  margin-bottom: 5%;
+}
+
+img.ingr-placement-1 {
+  margin-bottom: 10%;
+}
+
+img.ingr-placement-2 {
+  margin-bottom: 15%;
+}
+
+img.ingr-placement-3 {
+  margin-bottom: 20%;
+}
+
+img.ingr-placement-4 {
+  margin-bottom: 25%;
+}
+
+img.ingr-placement-5 {
+  margin-bottom: 30%;
+}
+
+img.ingr-placement-6 {
+  margin-bottom: 35%;
+}
+
+img.ingr-placement-7 {
+  margin-bottom: 40%;
+}
+
+img.ingr-placement-8 {
+  margin-bottom: 45%;
+}
+
+img.ingr-placement-9 {
+  margin-bottom: 50%;
+}
+
+
+
+
+/* Ingredient placement when being rendered to SMALL CARDS */
+img.ingredient-image.ingr-placement-0 {
+  margin-bottom: 7%;
+}
+
+img.ingredient-image.ingr-placement-1 {
+  margin-bottom: 12%;
+}
+
+img.ingredient-image.ingr-placement-2 {
+  margin-bottom: 17%;
+}
+
+img.ingredient-image.ingr-placement-3 {
+  margin-bottom: 22%;
+}
+
+img.ingredient-image.ingr-placement-4 {
+  margin-bottom: 27%;
+}
+
+img.ingredient-image.ingr-placement-5 {
+  margin-bottom: 32%;
+}
+
+img.ingredient-image.ingr-placement-6 {
+  margin-bottom: 37%;
+}
+
+img.ingredient-image.ingr-placement-7 {
+  margin-bottom: 42%;
+}
+
+img.ingredient-image.ingr-placement-8 {
+  margin-bottom: 48%;
+}
+
+img.ingredient-image.ingr-placement-9 {
+  margin-bottom: 53%;
+}
+
+/* resize ketchup and mayo images */
+#ingredient-image-11 {
+  width: 60%;
+  height: 30%;
+}
+
+#ingredient-image-12 {
+  width: 60%;
+  height: 30%;
+}
+
+#ingredient-image-8 {
+  height: 20%;
+}
+
+
+
+/* SIDE NAVS */
+.sidenav-left {
+  height: 100%;
+  width: 12%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  /* The image used */
+  background-image: url("images/nav-bar.jpg");
+
+  filter: blur(1px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sidenav-right {
+  height: 100%;
+  width: 12%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  /* The image used */
+  background-image: url("images/nav-bar.jpg");
+  transform: scaleX(-1);
+  filter: FlipH;
+
+  filter: blur(1px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  background-image: url('images/burger_nav.png');
+  height: 100px;
+}
+
+.block {
+  display: block;
+}
+
+#footer {
+  margin: 100px;
+}
